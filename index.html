@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/css/estilos.css">
+
+        <title>Mi primera Pagina Web</title>
+</head>
+
+<body>
+
+        <header>
+                <h1 class="cualquiera">Historia de HTML</h1>
+                <p>Un poco más de Historia</p>
+        </header>
+        <aside style="align-items: flex-end;">
+                <p id="parrafo1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni dolor iste,
+                        deleniti voluptatem praesentium iure ipsa obcaecati,
+                        laudantium minus eveniet, accusamus nemo distinctio consectetur sequi quod reprehenderit exercitationem sapiente
+                        reiciendis.</p>
+        </aside>
+        <section style="background-color: red;">
+                <h2>Creación de la Web. Primero Navegadore</h2>
+                <p >El origen de HTML se remonta a 1980, cuando el
+                        físico Tim Berners-Lee, investigador del CERN
+                        (Organización Europea para la Investigación Nuclear)
+                        propuso un nuevo sistema de “hipertexto” para compartir
+                        documentos.</p>
+        </section>
+        <hr>
+        <section>
+                <h2 class="tituloazul">Paso de HTML 4 a HTML 5</h2>
+                <p>Lista de Productos</p>
+                <ul>
+                        <li>Carne</li>
+                        <li>Frutas</li>
+                        <li>Bebidas</li>
+                </ul>
+                <ol>
+                        <li>Primero</li>
+                        <li>Segundo</li>
+                        <li>Tercero</li>
+                </ol>
+                <p>Lista dentro de otra lista</p>
+                <ul>
+                        <li>
+                                Cortes de Carnes
+                                <ul>
+                                        <li>Huachalomo</li>
+                                        <li>Entraña</li>
+                                        <li>Lomo Liso</li>
+                                </ul>
+                        </li>
+                        <li>
+                                Frutas
+                                <ul>
+                                        <li>Pera</li>
+                                        <li>Plátanos</li>
+                                        <li>Manzanas</li>
+                                </ul>
+                        </li>
+                </ul>
+                <dl>
+                        <dt>Avión</dt>
+                        <dd>
+                                Aeronave más pesada que el aire, provista de alas, 
+                                cuya sustentación y avance son consecuencia de la
+                                acción de uno o varios motores.
+                                <a target="_blank" href="https://www.youtube.com/watch?v=jBOh17n9ZhA">Clic para ver el video</a>  
+                                <img style="margin-top: 40px;" width="300" height="200"  src="/proyecto_web/assets/images/avion.jpg" alt="Imágen Referencial de un avión">
+                        </dd>
+                </dl>
+                <section >
+                        <h2 class="tituloazul">Video Incrustado</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jBOh17n9ZhA" title="YouTube video player"
+                                frameborder="3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                </section>
+        
+        </section>
+        <section>
+                <h2 style="text-align: center; ">Tablas en HTML5</h2>
+                <table  style="border: 1px solid black; margin: auto; ">
+                       <tr>
+                           <th></th>
+                           <th>Lunes</th>
+                           <th>Martes</th>
+                           <th>Miércoles</th>
+                           <th>Jueves</th>
+                           <th>Viernes</th>    
+                       </tr> 
+                       <tr class="form-check-input">
+                               <th>08:30AM</th>
+                               <td>Lenguaje</td>
+                               <td>Inglés</td>
+                               <td>Física</td>
+                               <td>Química</td>
+                               <td>Matemática</td>
+                       </tr>
+                       <tr>
+                                <th>10:30AM</th>
+                                <td>Matematica</td>
+                                <td>Quimica</td>
+                                <td>Física</td>
+                                <td>Inglés</td>
+                                <td>Lenguaje</td>
+                        </tr>
+                </table>
+                <table class="paises">
+                        <colgroup>
+                                <col style="background-color: gray;">
+                                <col  style="background-color: yellowgreen;">
+                                <col style="background-color: aquamarine;">
+                        </colgroup>
+                       <thead>
+                              <tr>
+                                      <th style="text-align: center;">País</th>
+                                      <th style="text-align: center;">Capital</th>
+                                      <th style="text-align: center;">Población</th>
+                              </tr> 
+                       </thead>
+                       <tbody>
+                               <tr>
+                                      <td>Chile</td>
+                                      <td>Santiago</td>
+                                      <td>5.614.000</td>
+                               </tr>
+                               <tr>
+                                       <td>Argentina</td>
+                                       <td>Buenos Aires</td>
+                                       <td>16.000.000</td>
+                               </tr>
+                               <tr>
+                                       <td>Perú</td>
+                                       <td>Lima</td>
+                                       <td>9.847.000</td>
+                               </tr>
+                       </tbody> 
+                </table>
+                <table style="border: 1px solid black; width: 80%; margin-top: 35px;">
+                       <tr> <!--Primera Fila-->
+                               <td style="border: 2px solid black;">1 celda</td>
+                               <td style="border: 2px solid black;">1 celda</td>
+                               <td colspan="2" style="border: 2px solid black;">2 celda</td>
+                       </tr> 
+                       <tr><!--Segunda Fila-->
+                                <td style="border: 2px solid black;">1 celda</td>
+                                <td colspan="2" style="border: 2px solid black;">2 celda</td>
+                                <td rowspan="2" style="border: 2px solid black;">2 filas celda</td>
+                        </tr> 
+                        <tr><!--Tercera Fila-->
+                                <td rowspan="3" style="border: 2px solid black;">3 filas celda</td>
+                                <td  style="border: 2px solid black;">1 celda</td>
+                                <td style="border: 2px solid black;">1 celda</td>
+                        </tr> 
+                        <tr><!--Cuarta Fila-->
+                                <td colspan="3" style="border: 2px solid black;">3 celda</td>
+                        </tr>
+                        <tr><!--Quinta Fila-->
+                                <td colspan="3" style="border: 2px solid black;">3 celda</td>
+                        </tr>
+                </table>
+
+        </section>
+        <section>
+                <h1 class="cualquiera" style="text-align: center;">Formularios en HTML</h1>
+                <form action="" method="GET">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="txtNombre" id="nombre" placeholder="Ingrese su nombre" required><br><br>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" name="txtApellidos" id="apellidos" required><br><br>
+                        <label for="email">E-Mail</label>
+                        <input type="email" name="txtCorreo" id="email" required><br><br>
+                        <label id="label1" class="tituloazul" for="sexo">Eliga sexo:</label><br>
+                        <input type="radio" name="rbSexo" id="sexo" value="masculino" >
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="rbSexo" id="sexo" value="femenino" checked >
+                        <label for="femenino">Femenino</label><br><br>
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" name="txtDireccion" id="direccion " required><br><br>
+                        <label for="ciudad">Seleccione su Ciudad</label>
+                        <select name="cboCiudad" id="ciudad" required>
+                                <option value="ninguna" selected>Seleccionar Ciudad</option>
+                                <option value="arica">Arica</option>
+                                <option value="laserena">La Serena</option>
+                                <option value="copiapo">Copiapó</option>
+                                <option value="santiago">Santiago</option>
+                                <option value="concepcion">Concepción</option>
+                                <option value="temuco">Temuco</option>
+                                <option value="valdivia">Valdivia</option>
+                                <option value="osorno">Osorno</option>
+                                <option value="puertomontt">Puerto Montt</option>
+                                <option value="puntaarenas">Punta Arenas</option>
+                        </select><br><br>
+                        <label for="password">Ingrese Contraseña</label>
+                        <input type="password" name="txtPassword" id="password" required><br><br>
+                        <label for="repassword">Repita Contraseña</label>
+                        <input type="password" name="txtRePassword" id="repassword" required><br><br>
+                        <label for="fechanacimiento">Fecha Nacimiento </label>
+                        <input type="date" name="dnacimiento" id="nacimiento"><br><br>
+                        <label for="idiomas">Marque idiomas que domina:</label><br>
+                        <label for="español">Español</label>
+                        <input type="checkbox" name="idioma" id="idioma" value="spanish">
+                        <label for="ingles">Inglés</label>
+                        <input type="checkbox" name="idioma" id="idioma" value="ingles">
+                        <label for="mandarin">Chino Mandarin</label>
+                        <input type="checkbox" name="idioma" id="idioma" value="mandarin"><br><br><br>
+                        <input type="checkbox" name="terminos" id="terminos" value="acepto">
+                        <label for="terminos">Acepto los terminos de contrato...</label><br><br><br>
+                        <button type="submit">Registrarme</button>
+                        <button type="reset">Limpiar Campos</button><br><br>
+
+                </form>
+        </section>
+        <h2 class="tituloazul">Soy de color azul</h2>
+        <h2>No tengo un color</h2>
+        <footer>
+                <p style="text-align: center;">Esta web fue realizada por Víctor Marín A</p>
+                
+        </footer>
+</body>
+
+</html>
